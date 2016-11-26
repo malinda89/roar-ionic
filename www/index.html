@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding" ng-controller="MainCtrl">
+
+        <div class="list">
+          <label class="item item-input">
+              <input type="search" placeholder="Search" ng-model="search">
+          </label>
+          <button class="button button-full button-assertive" ng-click="doSearch()">Search</button>
+        </div>
+
+        <ion-slide-box>
+
+          <!-- HARDCODED SINHALA ARTICLE START HERE -->
+          <ion-slide>
+            <div class="article-content-box">
+              <p>බස් එකක් කීවම අපිට මුලින්ම හිතේ මැවෙන්නේ මොනවද? ටයර් සීට්, වින්ඩ්ස්ක්&zwj;රීන් එක..ලොකු හෙඩ් ලයිට් 4.ඇතුලු බස් හැඩයක්. ඒත් ලංකාවේ අපිට නම් බස් එකක් කීවම එකපාරම ටක් ගාල මතක් වෙන තවත් චරිත දෙකක් තියෙනවා ඒ කොන්දොස්තර සහ ඩ්&zwj;රයිවර්. කොන්දොස්තර කෙනෙක් නැත්තං ඒක බස් එකක් නෙමෙයිද කියන මට්ටමටම කොන්දොස්තර සහ බස් එක එකට යා වෙලා තමයි අපේ මනසේ ඇදෙන්නේ. ලංකාවේ බස් එක කියන්නේ රග මඩලක් නම් එහි අධ්&zwj;යක්ෂක, තිර රචක, සහ ප්&zwj;රධාන නලුවා වගේ චරිත රැසක්ම කොන්දොස්තර මහත්තයාට හිමි වෙනවා. ඉතුරු රුපියල් දෙක ලැබෙයිද? හරි තැන බස්සවයිද? කියලා දෙගිඩියාවෙන් බස් එකේ යන වෙලාවක් නැතුව සාමාන්&zwj;ය වෙලාවක කොන්දොස්තර මහත්මයා දිහා ටිකක් බලා ඉන්න..ඔබටත් කොන්දොස්තර මහත්මයාගේ පහත සදහන් රාජකාරි රැසක්ම දකින්නට ලැබේවි.</p>
+              <h2>මගීන් ගැනීම</h2>
+              <figure id="attachment_3692" class="wp-caption alignnone"><img class="wp-image-3692 size-full" src="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/43-e1479535796840.jpg" alt="කොටුව දුම්රිය ස්ථානය ඉදිරිපිට" width="650" height="487"><figcaption class="wp-caption-text">කොටුව දුම්රිය ස්ථානය ඉදිරිපිට</figcaption></figure>
+              <p>බස් රිය හෝල්ට් එක අසල නවත්වනාත් සමගම ක්&zwj;රියාත්මක වන කොන්දොස්තර මහතා බස්රිය යන දිහාව සහ ප්&zwj;රධාන නැවතුම් කියමින් කෑ ගහනවා. ඉන් පසු අදාල ජනතාව දොර අසබඩට පැමිණි පසු ඔහු බස්රියට මගීන් සැනෙන් ඇතුල් කරගන්නේ “ආ… ඔහොම බෑ. ඉක්මන් කරන්න ඉක්මන් කරන්න” කියලා. ඇතැම්විට තරුණියන්ගේ නම් කොන්දෙන් අල්වා බස්රිය ඇතුලට පටවාගන්නට කොන්දොස්තර මහත්වරු කටයුතු කරනවා. පිටකොටුවේ නම් ඇතැම් විට මීගමුව බලා යන බස් රිය සහායක මීගමො,මීගෙමො මීගමෝ… කියා කෑ ගසන්නේ ඈත සිටින ගාල්ල මාතර යන්නට සිටින අයවලුන්ද හැරී මීගමු එනු ඇතැයි සිතමින් විය යුතුයැයි එදෙස බලාසිටින විට සිතෙනවා.</p>
+              <h2>මගින් පිලියෙල කිරීම</h2>
+              <figure id="attachment_3694" class="wp-caption alignnone"><img class="wp-image-3694 size-full" src="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/45-1-e1479536194606.jpg" alt="ජනප්&zwj;රිය දැන්වීමක්. (4.bp.blogspot.com)" width="650" height="488"><figcaption class="wp-caption-text">ජනප්&zwj;රිය දැන්වීමක්. (4.bp.blogspot.com)</figcaption></figure>
+              <p>“ආ ඔය සුදු පාට ටී එක ගහන් ඉන්න මල්ලි සයිඩ් වෙලා අනික් අයට ඉඩ දෙන්න මැදට යන්න. ” ඒ කොන්දොස්තර මහතා මගීන් පිලියෙල කරන එක් විදියක්, සයිඩ් වෙන්න… කකුල් ඇතුලට ගන්න. . මැදට යන්න… ඉඩ දෙන්න… බහින්න ඉඩදෙන්නකෝ ඉතිං. . මිස් තරහ නැතුව පොඩ්ඩක් ඉඩදෙන්න… ඒ මගීන් පිලියෙල කිරීමේදී නිතර ඇහෙන වචන ටිකක්. ඒ වගේම කොතරම් සෙනග හිටියත් කොන්දොස්තර මහත්මයාට නම් තවත් මගීන් ගන්නට රිය තුල ඉඩක් ඇති තැනක් කොහොම හරි පේනවා.</p>
+              <p>ඔහු ඇතැම් විටක මගීන් දකින්නේ පැටවීමට ඇති සැමන් තොගයක් ලෙස වන්නට ඕන. එහා මෙහා කරමින් තෙරපමින් සයිඩ් කරමින් විශාල ප්&zwj;රමාණයක් මගින් පටවා ගෙන යෑම දක්ෂ කොන්දොස්තර මහත්මයෙක් නිරන්තරයෙන්ම උත්සාහ කරන දෙයක්.</p>
+              <h2>ඉතුරු බේරිම සහ මුදල් ගැනීම</h2>
+              <figure id="attachment_3691" class="wp-caption alignnone"><img class="wp-image-3691 size-full" src="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/42-e1479536281506.jpg" alt="ඉංදියාවේ කාන්තා කොන්දොස්තර වරියක්. (fundians.com)" width="650" height="436"><figcaption class="wp-caption-text">ඉංදියාවේ කාන්තා කොන්දොස්තර වරියක්. (fundians.com)</figcaption></figure>
+              <p>බස්රියේ මගීන් පිලියෙල කරන්නේත් වැඩිමනක් පටවා ගන්නේත් මගීන් මහපාරේ දුක් විදිනවා බලන්න බැරි කමට සහ ඒ අයටත් ගමනක් ඉක්මනින් යන්න ඕනි නිසා. ඒ බස් රියදුරු සහ කොන්දොස්තර මගින් පටවා ගැනීම ගැන කියන කතාන්දර. සැබැවින්ම වැඩිපුර මගීන් කියන්නේ වැඩිපුර මුදල්. නිතර රු 20/=ක බස් දුරක් ගමන් කරන යුවතියක් පාරේ සිටීනම් කොන්දොස්තර තැනගේ සිතේ මැවෙන්නේ යුවතිය නෙමෙයි බස් එකට නගින්නට බලා සිටින රුපියල් විස්ස කෑල්ලක් ලෙස.</p>
+              <p>උදේ පාන්දර නම් ටිකට් මැෂිම හෝ ටිකට් පොත හරහා ටිකට් නිකුත් කරනවා. ළගපාත යන බස් රථවල සහ කෙටිදුර සදහා නම් ටිකට් ගැන එතරම්ම අවධානයක් නෑ.</p>
+              <p>ටිකට් යන්ත්&zwj;ර සපයා තිබුනත් මගීන් බොහෝ වැඩි අවස්ථාවක මැෂිම භාවිතය අපහසු ව්&zwj;යායාමයක් බවට පත් වෙනවා. ලංකාවේ බස් ගාස්තු පවතින්නේ තවමත් රුපියලේ කාසි දෙකේ කාසි පහේ කාසි වැනි කාසි වලිනුත් ගනුදෙනු වන විදියට නිසා නිතර රුපියල, දෙක, පහ වැනි මාරු කාසි අර්බුද බස් වල ඇතිවෙනවා.</p>
+              <h2>මගීන්ට නොමිලයේම සංගීතය සැපයීම</h2>
+              <p>බස් වල සෙටප් එකට මෑත කාලයේ තිරයක්ද එකතු වුනා. මේ බස් තිර වල (LED LCD Screen) සහ සෙටප් වල බොහෝවිට ධාවනය වන්නේ ඕල්රයිට්, ෆ්ලෑෂ්බෑක් ආදී සංගීත කන්ඩායම් වල සංගීත ප්&zwj;රසංග සහ ජනප්&zwj;රිය මල් සිංදු හා බස් සිංදු.</p>
+              <p>විවිධාකාර මානසික කායික අපහසුතා මැද ගමන් කරන බස් මගීන් වෙනුවෙන් සැනසිල්ල උදාකරනවා කියන උතුම් අදහසින් බස් හිමියන් මේ සංගීත පද්ධති සිය බසයට සවිකොට තිබෙනවා. එහෙත් බොහෝ වෙලාවට මේ සංගීත ශෛලියට ආසා නැති අයට නම් මේ කොත්තු සංගීතය සහ අමු පදවැල් සහිත සිංදු සහ පහත් විහිලු සහිත සංගීත ප්&zwj;රසංග කියන්නේ කරදරයක්. එහෙත් කොන්දොස්තර මහතාට ඇති විධායක බලතල අනුව ඔහු අපි ඇසිය යුතු සිංදු තෝරා බලා අපිට ඒවා අස්සවන්නට කටයතු කරන්නේ ඔහුගේ විශය පථයේ ඇති භාරදුර වගකීමක් ඉටුකරනවා වැනි අදහසකින් වන්නට ඕනි.</p>
+              <h2>ගැටුම් නිරාකරණය</h2>
+              <figure id="attachment_3695" class="wp-caption alignnone"><img class="wp-image-3695 size-full" src="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2.jpg" alt="ඉන්දියාවේ බස් සේවා ගැන කාටුනයක්. (thehindu.com)" width="636" height="477" srcset="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2.jpg 636w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2-400x300.jpg 400w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2-600x450.jpg 600w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2-611x458.jpg 611w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/46-2-300x225.jpg 300w" sizes="(max-width: 636px) 100vw, 636px"><figcaption class="wp-caption-text">ඉන්දියාවේ බස් සේවා ගැන කාටුනයක්. (thehindu.com)</figcaption></figure>
+              <p>බස් රියේ ගමනේදී ඇතැම් අය යාන්තම් ඇගේ වැදුනත් කහඹිලියා වැදුනා මෙන් සැනින් රවා බලනවා. ඇතැම් පුරුෂයින් කාන්තා හිංසනයට සමාජයේදී දරුනු ලෙස විරුද්ධයි. ඔවුන් අනික් අය හිංසනයේ යෙදෙනවිට ඒ අයට බනින්න සහ රවන්නත් පෙළඹෙනවා. ඒත් බොහෝ ලාංකික පිරිමි ගෑනු කෙනෙක් සිටිනවා නම් සැටලයිට් එක හැරෙව්ව වගේ හැරෙන්නෙම ඒ කාන්තාව දෙසට. පුරුෂයින් නම් ඒ ගැන කියන්නේ ප්&zwj;රමාණයෙන් විශාල කාන්තාවන් කෙසේ හෝ කොහේ හෝ වදින නිසා ඔවුන්ට වදින්නේ නැතිව යන්නට නම් ඔවුන් පුද්ගලික වාහනයක් කුලියට ගත යුතු බවක්.</p>
+              <p>මේ හිරිහැර අවසානයේ ගැටුම් දක්වා ඒවා දුරදිග ගියපසු එය විසදන්නට ලැබෙන්නේ කොන්දොස්තර මහත්මයාට. බොහෝ කොන්දොස්තර මහත්වරු මෙවැනි අවස්ථා ගැන ඉවෙන් වගේ දන්නවා. ඔවුන් එවැනි දේවල් සමථයට පත් කරන්නේත් ඇතැම් වෙලාවට දක්ෂ බේරුම්කරුවන් ලෙසින්. මේ පමණක් නෙමෙයි විවිධ ආකාරයේ කලබල රන්ඩු බස් ගමන් වලදී ඇතිවෙනවා. ඒ සෑම එකකදීම කොන්දොස්තර මහතාට විශේෂ වගකීමක් පැවරෙනවා බස් රියේ අඩදබර බේරා මගීන්ගේ ආරක්ෂාව සැලසීමට.</p>
+              <figure id="attachment_3696" class="wp-caption alignnone"><img class="wp-image-3696 size-full" src="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/47-1.jpg" alt="කොන්දොස්තර මහත්මයෙක් (feedzig.com)" width="500" height="310" srcset="http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/47-1.jpg 500w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/47-1-484x300.jpg 484w, http://sinhala.roar.lk/wp-content/uploads/sites/2/2016/11/47-1-300x186.jpg 300w" sizes="(max-width: 500px) 100vw, 500px"><figcaption class="wp-caption-text">කොන්දොස්තර මහත්මයෙක් (feedzig.com)</figcaption></figure>
+              <h2>කෝ ඩ්&zwj;රයිවර් Co-Driver</h2>
+              <p>වාහන රැලි ධාවන තරගවලදී රියදුරුට සහායකයෙක් සිටින අවස්ථා තිබෙනවා. සිතියම බැලීම, මාර්ග අවහිරතා නිරීක්ෂණය කොට උපදෙස් දීම අනෙක් වාහන වල දුර ප්&zwj;රමාණ සහ ගතයුතු වේග ගැන උපදෙස් දීම ආදී රියදුරුට සහාය වීමේ කාර්යය පැවරෙන්නේ මෙම සම රියදුරුට (Co-Driver).</p>
+              <p>ලංකාවෙත් ඉතින් බස්රිය වල ගමන් කරන විට සාමාන්&zwj;ය ටිකට් පතකින් ත්&zwj;රාසජනක රේස් අත්දැකීමක් ලබාගන්නටද අපිට අවස්ථාවක් ලැබෙනවා. මාර්ගයෙන් ඉවතට යමින් මාර්ග සංඥා නොතකමින් අනෙක් මාර්ග පථ වලට පිවිසෙමින් යන මේ බස් රේස් වලින් ඇතැම්විට මගීන්ට පිටරට රෝල කෝස්ටරයක ගමන් කරන අත්දැකීමක් වැනි අත්දැකීමක් ලැබෙනවා. එසේම අනෙක් බස් එනවාද බැලීම ඉදිරි බස් වලට සංඥා නිකුත් කර බස් අතර පරතරය බලා මීලගට බසය පෑගිය යුතු හෝ කෙටිය යුතුද යන කාරණා රියදුරුට දැනුම් දෙන්නට ඇතැම් කොන්දොස්තර වරු සමත්.</p>
+              <p>අපේ කොන්දොස්තර තැන මෙවන් අවස්ථාවලදී අනෙක් වාහන වලට වේගය බාල කරන්නට සංඥා කරමින් එක් පයක් පාපුවරුවේද එක් පයක් එලියේද තබාගෙන රියදුරුට උපදෙස් දෙමින් මනා සේවයක් බස් රියේ වේගය සහ අනෙක් බසය පසු කිරීම වෙනුවෙන් කරනවා. එය කෝ ඩ්&zwj;රයිවර් රාජකාරිය ලෙස හදුන්වන්නට පුළුවනි.</p>
+              <h2>කොන්දොස්තර චර්යා පාලනය</h2>
+              <p>සරල උදාහරණයක් සැලකුවොත් බත්තරමුල්ලට රාජ්&zwj;ය ආයතන ගෙනයන විට එවිට බත්තරමුල්ලට දෙසට ඇතිවන මගී උවමනාවට සරිලන්න ප්&zwj;රවාහන සැලැස්මක් අපේ පද්ධතියට නිසි කලට හදුන්වා දෙන්නටවත් ලංකාවේ පාලකයන්ට බැරි වුනා. ඒ නිසා විනාඩි 11ක පිටකොටුව බත්තරමුල්ල ගමනට මගින්ට දැන් පැයක් හමාරක් පාරේ ගත කරන්නට වෙලා.</p>
+              <p>සිංගප්පූරුව කුඩා රටක් ඔවුන් සංවර්ධනය වන විට මුලින්ම කල දෙයක් තමයි නගරය තුල මගී ප්&zwj;රවාහනය සැලසුම් කිරීම. ඒ ඔස්සේ ඔවුන් මෙට්&zwj;රො රේල් සහ ලයිට් රේල් හරහා තැනකින් තැනකට මගීන් පහසුවෙන් යන්න ඉඩකඩ සැලසුවා.</p>
+              <p>ඉතිං අපේ ඉහල නිලවල හිටපු සහ ඉන්න අයත් නිසි කලට අවශ්&zwj;යතාවයන්ට අනුව දියුනු විදියට රටේ ප්&zwj;රවාහනය සැලසුම් කරල ස්ථාපනය කලානම් දිනකට පැය දොලහක් සිටගෙන කාර්යයන් රැසක් එකවිට කරන පීඩිත රාජකාරියක් ලෙස කොන්දොස්තර රාජකාරිය නිර්මාණය වන්නේ නෑ.එසේ දියුණු ප්&zwj;රවාහන ක්&zwj;රමයක් අප සතුවී නම් කොන්දොස්තර මහත්මයාගේ භූමිකාව මීට වඩා බොහෝසෙයින් වෙනස් වන්නට තිබුනා. කොන්දොස්තර මහත්වරුන් ගැන ඔබටත් අදහස් තිබේනම් අපිත් එක්ක බෙදාගෙන හුවමාරු කරගෙන යන්න අමතක කරන්න එපා.</p>
+              <div id="feelbox-widget" class="voted" post-id="3689">
+              <div class="feelbox-title">
+              මේ පිළිබඳව ඔබේ අදහස කුමක්ද?
+              </div>
+              <span id="total">120</span><span id="voted"></span>
+              <div id="bd">
+              <div id="loading" style="display: none;"></div>
+              <div class="mood-cell" id="mdr-e1">
+              <div class="count top" data-after=" readers" style="display: inline-block;">68</div>
+              <div class="mood-percent" style="height: 60px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">ආකර්ශනීයයි<span class="badge count" data-after=" readers" style="display: inline-block;">68</span></div>
+              </div>
+              <div class="mood-cell" id="mdr-e2">
+              <div class="count top" data-after=" readers" style="display: inline-block;">25</div>
+              <div class="mood-percent" style="height: 22.0588px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">අධ්යාපනිකයි<span class="badge count" data-after=" readers" style="display: inline-block;">25</span></div>
+              </div>
+              <div class="mood-cell" id="mdr-e3">
+              <div class="count top" data-after=" readers" style="display: inline-block;">16</div>
+              <div class="mood-percent" style="height: 14.1176px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">සතුටුයි<span class="badge count" data-after=" readers" style="display: inline-block;">16</span></div>
+              </div>
+              <div class="mood-cell" id="mdr-e4">
+              <div class="count top" data-after=" readers" style="display: inline-block;">3</div>
+              <div class="mood-percent" style="height: 2.64706px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">දුකයි<span class="badge count" data-after=" readers" style="display: inline-block;">3</span></div>
+              </div>
+              <div class="mood-cell" id="mdr-e5">
+              <div class="count top" data-after=" readers" style="display: inline-block;">7</div>
+              <div class="mood-percent" style="height: 6.17647px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">තරහ යනවා<span class="badge count" data-after=" readers" style="display: inline-block;">7</span></div>
+              </div>
+              <div class="mood-cell" id="mdr-e6">
+              <div class="count top" data-after=" reader" style="display: inline-block;">1</div>
+              <div class="mood-percent" style="height: 0.882353px;">
+              <div class="mood-percent-number"></div>
+              </div>
+              <div class="button btn btn-default btn-block">හාස්&zwj;යජනකයි<span class="badge count" data-after=" reader" style="display: inline-block;">1</span></div>
+              </div>
+              </div>
+              </div>
+            </div>        
+          </ion-slide>
+          <!-- HARDCODED SINHALA ARTICLE END HERE -->
+
+          <!-- Render slides from an array of articles : see app.js, MainCtrl -->
+          <ion-slide ng-repeat="article in articles">
+            <div ng-bind-html="article"></div>  
+          </ion-slide>
+        </ion-slide-box>
+
+      </ion-content>
+
+    </ion-pane>
+  </body>
+</html>
